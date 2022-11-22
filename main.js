@@ -17,7 +17,8 @@ for ( let i=0; i< listaDeTeclas.length; i++ ) {
 
     }   
     //adicionando uma classe
-    tecla.onkeydown = function(){
+    tecla.onkeydown = function(evento){
+        if (evento.code == 'Space')
         tecla.classList.add('ativa');
     }
 
